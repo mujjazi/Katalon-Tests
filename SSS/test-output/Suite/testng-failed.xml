@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="Appium.SearchTestCase"/>
+      <class name="Appium.LoginTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="Appium.LoginTestCase">
+        <methods>
+          <include name="LoginTestCase"/>
+        </methods>
+      </class> <!-- Appium.LoginTestCase -->
+      <class name="Appium.SearchTestCase">
+        <methods>
+          <include name="createAppiumDriver"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Appium.SearchTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

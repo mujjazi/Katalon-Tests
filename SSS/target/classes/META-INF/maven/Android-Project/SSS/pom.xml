@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Android-Project</groupId>
+  <artifactId>SSS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+        <appium.version>3.3.0</appium.version>
+        <testng.version>6.9.10</testng.version>
+    </properties>
+ 
+    <dependencies>
+ 
+        <!-- Appium -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appium.version}</version>
+        </dependency>
+ 
+        <!-- testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+ 
+    </dependencies>
+  
+  
+  
+</project>
